@@ -11,9 +11,7 @@ body {
         "div1 div1 div2"
         "div4 div3 div2"
         "div4 div5 div5";
-}
-div{
-    margin: 5px;
+        gap: 10px;
 }
 
 div:nth-child(1) {
