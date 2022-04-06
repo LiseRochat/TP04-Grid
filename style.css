@@ -1,0 +1,42 @@
+/* L'intégration demandé est impossible à faire en FlexBox */
+body {
+    min-height: 100vh;
+    /* De base la div prend l'espace de son contenu
+    * Cependant le grid donne une taille aux élements
+    */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+        "div1 div1 div2"
+        "div4 div3 div2"
+        "div4 div5 div5";
+}
+div{
+    margin: 5px;
+}
+
+div:nth-child(1) {
+    background: yellow;
+    grid-area: div1;
+}
+
+div:nth-child(2) {
+    background: purple;
+    grid-area: div2;
+}
+
+div:nth-child(3) {
+    background: green;
+    grid-area: div3;
+}
+
+div:nth-child(4) {
+    background: red;
+    grid-area: div4;
+}
+
+div:nth-child(5) {
+    background: orchid;
+    grid-area: div5;
+}
