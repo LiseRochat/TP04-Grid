@@ -11,6 +11,7 @@ body {
         "div1 div1 div2"
         "div4 div3 div2"
         "div4 div5 div5";
+        /* Ecart entre chaque éléments */
         gap: 10px;
 }
 
